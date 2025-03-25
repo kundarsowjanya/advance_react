@@ -3,8 +3,10 @@ import Message from "./Message";
 import styles from "./CityList.module.css"
 import Spinner from "./Spinner"
 import PropTypes from 'prop-types';
+import { useCities } from "../contexts/CityContext";
 
-function CityList({cities,isloading}) {
+function CityList() {
+    const {cities,isloading}=useCities()
 
     if(isloading) return <Spinner/>
 
@@ -28,9 +30,5 @@ function CityList({cities,isloading}) {
     )
 }
 
-CityList.propTypes = {
-    cities: PropTypes.array.isRequired,   // Assuming cities is an array
-    isloading: PropTypes.bool.isRequired  // Boolean for loading status
-};
 
 export default CityList
