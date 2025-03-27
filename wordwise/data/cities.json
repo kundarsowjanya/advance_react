@@ -1,64 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
-      "cityName": "Madrid",
+      "cityName": "Las Rozas de Madrid",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2025-03-27T14:39:58.559Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "40.49378591607586",
+        "lng": "-3.858650769657038"
       },
-      "id": 17806751
+      "id": 73930386
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": 98443197
-    },
-    {
-      "cityName": "test",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 7777
-    },
-    {
-      "cityName": "test1",
+      "cityName": "Estamariu",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2025-03-27T14:43:47.890Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "42.376865022808886",
+        "lng": "1.5572692204016605"
       },
-      "id": 666666667
+      "id": 73930387
+    },
+    {
+      "cityName": "Meco",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-03-27T14:45:18.870Z",
+      "notes": "",
+      "position": {
+        "lat": "40.53403341576248",
+        "lng": "-3.3191763161113923"
+      },
+      "id": 73930388
+    },
+    {
+      "cityName": "Villarluengo",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-03-27T17:10:55.836Z",
+      "notes": "",
+      "position": {
+        "lat": "40.68405071339045",
+        "lng": "-0.551463984576952"
+      },
+      "id": 73930389
     }
   ]
 }
