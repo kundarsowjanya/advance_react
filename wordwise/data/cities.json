@@ -13,18 +13,6 @@
       "id": 73930386
     },
     {
-      "cityName": "Estamariu",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2025-03-27T14:43:47.890Z",
-      "notes": "",
-      "position": {
-        "lat": "42.376865022808886",
-        "lng": "1.5572692204016605"
-      },
-      "id": 73930387
-    },
-    {
       "cityName": "Villarluengo",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -49,30 +37,6 @@
       "id": 73930390
     },
     {
-      "cityName": "Tomar",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2025-03-27T17:15:02.427Z",
-      "notes": "",
-      "position": {
-        "lat": "39.662563123702114",
-        "lng": "-8.372004785457001"
-      },
-      "id": 73930391
-    },
-    {
-      "cityName": "Carballedo",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2025-03-27T17:15:07.412Z",
-      "notes": "",
-      "position": {
-        "lat": "42.55705438197149",
-        "lng": "-7.824540225258267"
-      },
-      "id": 73930392
-    },
-    {
       "cityName": "Haskovo",
       "country": "Bulgaria",
       "emoji": "🇧🇬",
@@ -83,6 +47,18 @@
         "lng": "25.61689326543929"
       },
       "id": 73930393
+    },
+    {
+      "cityName": "Albacete",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-03-31T12:11:37.145Z",
+      "notes": "",
+      "position": {
+        "lat": "38.981268162087524",
+        "lng": "-1.7815583541478142"
+      },
+      "id": 73930394
     }
   ]
 }

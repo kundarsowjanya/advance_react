@@ -1,5 +1,6 @@
 
 import { useReducer } from "react";
+import { useCallback } from "react";
 import { useContext } from "react";
 import { createContext,useState,useEffect } from "react";
 
@@ -86,7 +87,7 @@ useEffect(()=>{
 
 },[])
 
-async function getCity(id){
+const getCity=useCallback(async function getCity(id){
   if(Number(id)===currentCity.id) return
   try{
     dispatch({type:"loading"})
@@ -100,7 +101,7 @@ async function getCity(id){
       payload: "There was an error loading city...",
     });
   }
-}
+},[currentCity.id])
 
 async function createCity(newCity){
   try{
