@@ -25,18 +25,6 @@
       "id": 73930387
     },
     {
-      "cityName": "Meco",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2025-03-27T14:45:18.870Z",
-      "notes": "",
-      "position": {
-        "lat": "40.53403341576248",
-        "lng": "-3.3191763161113923"
-      },
-      "id": 73930388
-    },
-    {
       "cityName": "Villarluengo",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -47,6 +35,54 @@
         "lng": "-0.551463984576952"
       },
       "id": 73930389
+    },
+    {
+      "cityName": "Sesma",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-03-27T17:14:58.140Z",
+      "notes": "",
+      "position": {
+        "lat": "42.49030089357309",
+        "lng": "-2.154979859196105"
+      },
+      "id": 73930390
+    },
+    {
+      "cityName": "Tomar",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2025-03-27T17:15:02.427Z",
+      "notes": "",
+      "position": {
+        "lat": "39.662563123702114",
+        "lng": "-8.372004785457001"
+      },
+      "id": 73930391
+    },
+    {
+      "cityName": "Carballedo",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-03-27T17:15:07.412Z",
+      "notes": "",
+      "position": {
+        "lat": "42.55705438197149",
+        "lng": "-7.824540225258267"
+      },
+      "id": 73930392
+    },
+    {
+      "cityName": "Haskovo",
+      "country": "Bulgaria",
+      "emoji": "🇧🇬",
+      "date": "2025-03-28T04:59:04.785Z",
+      "notes": "yytdejc",
+      "position": {
+        "lat": "41.98657755416851",
+        "lng": "25.61689326543929"
+      },
+      "id": 73930393
     }
   ]
 }
