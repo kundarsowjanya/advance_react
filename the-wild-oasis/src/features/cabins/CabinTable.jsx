@@ -1,31 +1,47 @@
-import styled from "styled-components";
+
 
 import Spinner from "../../ui/Spinner";
 import CabinRow from "./CabinRow";
 import { useCabins } from "./useCabins";
 import Table from "../../ui/Table";
 import Menus from "../../ui/Menus";
-
-const TableHeader = styled.header`
-  display: grid;
-  grid-template-columns: 0.6fr 1.8fr 2.2fr 1fr 1fr 1fr;
-  column-gap: 2.4rem;
-  align-items: center;
-
-  background-color: var(--color-grey-50);
-  border-bottom: 1px solid var(--color-grey-100);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  font-weight: 600;
-  color: var(--color-grey-600);
-  padding: 1.6rem 2.4rem;
-`;
+import { useSearchParams } from "react-router-dom";
 
 function CabinTable() {
   const { isLoading, cabins } = useCabins();
+  const [searchParams]=useSearchParams()
 
   if (isLoading) return <Spinner />;
 
+  const filterValue=searchParams.get('discount') || 'all'
+
+  let filterCabins
+  //1. Filter cabins based on the discount value
+  if (filterValue==='all'){
+      filterCabins=cabins
+  }
+  if (filterValue==='no-discount'){
+      filterCabins=cabins.filter(cabin=>cabin.discount===0)
+  }
+  if (filterValue==='with-discount'){ 
+     filterCabins=cabins.filter(cabin=>cabin.discount>0)
+  }
+
+  //2.SortBy
+  const sortBy=searchParams.get('sortBy') || 'name-asc'
+  if (sortBy === "name-asc") {
+    filterCabins = filterCabins.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sortBy === "name-desc") {
+    filterCabins = filterCabins.sort((a, b) => b.name.localeCompare(a.name));
+  } else if (sortBy === "regularPrice-asc") {
+    filterCabins = filterCabins.sort((a, b) => a.regularPrice - b.regularPrice);
+  } else if (sortBy === "regularPrice-desc") {
+    filterCabins = filterCabins.sort((a, b) => b.regularPrice - a.regularPrice);
+  } else if (sortBy === "maxCapacity-asc") {
+    filterCabins = filterCabins.sort((a, b) => a.maxCapacity - b.maxCapacity);
+  } else if (sortBy === "maxCapacity-desc") {
+    filterCabins = filterCabins.sort((a, b) => b.maxCapacity - a.maxCapacity);
+  }
   return (
     <Menus>
       <Table columns="0.6fr 1.8fr 2.2fr 1fr 1fr 1fr">
@@ -39,7 +55,7 @@ function CabinTable() {
         </Table.Header>
 
         <Table.Body
-          data={cabins}
+          data={filterCabins}
           render={(cabin) => <CabinRow cabin={cabin} key={cabin.id} />}
         />
       </Table>
